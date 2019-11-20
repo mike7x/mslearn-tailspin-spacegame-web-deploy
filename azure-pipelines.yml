@@ -81,7 +81,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'Azure per studenti(e6fb73fb-30a6-46b3-ab3b-e82efd6482da)'
+              azureSubscription: 'myconnection'
               appType: 'webAppLinux'
               appName: '$(WebAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
